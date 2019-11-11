@@ -21,7 +21,6 @@ class ProductPage(BasePage):
         alert = self.browser.find_elements(*ProductPageLocators.ALERT)[2].text
         assert expected_alert in alert, f"Should be '{expected_alert}' in alert:'{alert}'"
 
-
     def add_to_basket(self):
         add_to_basket_button = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_BUTTON)
         add_to_basket_button.click()

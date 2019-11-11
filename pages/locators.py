@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTRATION_FORM = (By.CSS_SELECTOR, "#register_form")
-    EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
-    PASSWORD1 = (By.CSS_SELECTOR, "#id_registration-password1")
-    PASSWORD2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    EMAIL = (By.ID, "id_registration-email")
+    PASSWORD1 = (By.ID, "id_registration-password1")
+    PASSWORD2 = (By.ID, "id_registration-password2")
     BUTTON_SUBMIT = (By.NAME, "registration_submit")
 
 class ProductPageLocators():
